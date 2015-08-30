@@ -59,7 +59,6 @@
 	top: 0;
 	left: 0;
 	background-color: #000;
-	z-index: 0;
 	opacity: 0.5;
 }
 .video-thumb .foreground
@@ -69,7 +68,6 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1;
 	background-image: url("../img/play.png");
 	background-position: center center;
 	background-repeat: no-repeat;
