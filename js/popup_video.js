@@ -25,6 +25,6 @@ popup_video = {
 	},
 	"hide" : function(){
 		$("#popup_video_object").css("display","none");
-		player.stopVideo();
+		player.stopVideo(); 
 	}
 }
