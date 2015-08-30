@@ -89,7 +89,7 @@
         <li>
           <div class="publish-report">
           <img src="img/graphic.png" alt="" data-lb-comment="Recommended size is 27 x 22 pixels."><p class="testimonial-text" >Two of the best in the biz... A gem for aspiring authors.”</p></div>
-          <div class="img"><img src="img/hugh-howey.jpg" alt="" data-lb-comment="Recommended size is 160 x 159 pixels."></div>
+          <div class="img" rel="tZ-CGpN1wyk"><img src="img/hugh-howey.jpg" alt="" data-lb-comment="Recommended size is 160 x 159 pixels."></div>
 
           <p class="title-bottom" >Hugh Howey</p>
           <div>Author of Wool</div>
@@ -98,7 +98,7 @@
         <li>
           <div class="publish-report">
           <img src="img/graphic.png" alt="" data-lb-comment="Recommended size is 27 x 22 pixels."><p class="testimonial-text"> It's tough to find more honest and straight- forward marketing advice than what you'll get from these indie authors.”</p></div>
-          <div class="img"><img src="img/jane-friedman.jpg" alt="" data-lb-comment="Recommended size is 161 x 159 pixels."></div>
+          <div class="img" rel="ak8PZO0145A"><img src="img/jane-friedman.jpg" alt="" data-lb-comment="Recommended size is 161 x 159 pixels."></div>
 
           <p class="title-bottom">Jane Friedman</p>
           <div>Former Editor, Writer’s Digest </div>
@@ -107,7 +107,7 @@
         <li>
           <div class="publish-report">
           <img src="img/graphic.png" alt=""  data-lb-comment="Recommended size is 27 x 22 pixels."><p class="testimonial-text">The most important book on self-publishing I've ever read. </p></div>
-          <div class="img"><img src="img/karol-gajda.jpg" alt="" data-lb-comment="Recommended size is 161 x 159 pixels."></div>
+          <div class="img" rel="3A_eklVAKVY"><img src="img/karol-gajda.jpg" alt="" data-lb-comment="Recommended size is 161 x 159 pixels."></div>
 
           <p class="title-bottom" data-lb-id="testimonial-name-03" data-lb-name="Testimonial Name 03" >Karol Gajda</p>
           <div data-lb-id="testimonial-post-03" data-lb-name="Testimonial Source 03" >Industry Blogger </div>
@@ -116,7 +116,7 @@
         <li>
           <div class="publish-report">
          <img src="img/graphic.png" alt="" data-lb-comment="Recommended size is 27 x 22 pixels."><p class="testimonial-text" >Consider it the most valuable guide book to publishing success.”</p></div>
-          <div class="img"><img src="img/jim-kukral.jpg" alt="" data-lb-comment="Recommended size is 161 x 159 pixels."></div>
+          <div class="img" rel="QpX8LLlHzg8"><img src="img/jim-kukral.jpg" alt="" data-lb-comment="Recommended size is 161 x 159 pixels."></div>
 
           <p class="title-bottom"   >Jim Kukral</p>
           <div data-lb-id="testimonial-post-04"  >Founder, Author Marketing </div>
@@ -125,7 +125,7 @@
         <li class="last" >
           <div class="publish-report">
          <img src="img/graphic.png" alt=""  data-lb-comment="Recommended size is 27 x 22 pixels."><p class="testimonial-text" >I have a pretty popular blog on self- publishing, and I've written a couple of books on the topic … for my money, this is the best book on self- publishing out there.”</p></div>
-          <div class="img"><img src="img/david-gaughran.jpg" alt="" data-lb-comment="Recommended size is 161 x 159 pixels."></div>
+          <div class="img" rel="vTaOpStbD3s"><img src="img/david-gaughran.jpg" alt="" data-lb-comment="Recommended size is 161 x 159 pixels."></div>
           <p class="title-bottom">David Gaughran,</p>
           <div>Author “Let’s Get Digital” and “Let’s Get Visible</div>
         </li>
@@ -190,8 +190,18 @@
 <!-- Custom Javascript -->
 <!-- Popup Video for testimonials -->
 <script src="js/popup_video.js"></script>
+<script src="https://www.youtube.com/player_api"></script>
 <script>
   popup_video.init();
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('popup_video_object_box', {
+      height: '360',
+      width: '640',
+      videoId: 'M7lc1UVf-VE',
+      playerVars: {controls:1,modestbranding:1,rel:0,showinfo:0}
+    });
+  }
 </script>
 <!-- End Custom Javascript -->
 </body>

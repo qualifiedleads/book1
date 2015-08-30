@@ -16,7 +16,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	opacity: 0.5;
+	opacity: 0.8;
 }
 #popup_video_object_box
 {
@@ -26,9 +26,12 @@
 	margin: auto;
 	background-color: #FFF;
 	border: 20px solid #222;
-	border-radius: 5px;
+	border-radius: 10px;
 	line-height: 360px;
 	text-align: center;
+	-webkit-box-shadow: 0px 0px 70px 1px rgba(255,255,255,0.6);
+	-moz-box-shadow: 0px 0px 70px 1px rgba(255,255,255,0.6);
+	box-shadow: 0px 0px 70px 1px rgba(255,255,255,0.6);
 }
 #popup_video_object_box iframe
 {
