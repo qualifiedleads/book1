@@ -4,8 +4,8 @@ popup_video = {
 		var popup_video_object = '<div id="popup_video_object"><div class="video-object-overlay"></div><div id="popup_video_object_box">Video Player</div></div>';
 		$("body").append(popup_video_object);
 		var box = $("#popup_video_object_box");
-		var tm = box.height()+((box.outerHeight()-box.innerHeight())/2);
-		var lm = box.width()+((box.outerWidth()-box.innerWidth())/2);
+		var tm = box.height()+(box.outerHeight()-box.innerHeight());
+		var lm = box.width()+(box.outerWidth()-box.innerWidth());
 		box.css({
 	        'position' : 'absolute',
 	        'left' : '50%',
@@ -25,6 +25,6 @@ popup_video = {
 	},
 	"hide" : function(){
 		$("#popup_video_object").css("display","none");
-		player.stopVideo(); 
+		player.stopVideo();
 	}
 }
