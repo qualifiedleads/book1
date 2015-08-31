@@ -89,7 +89,7 @@ blockquote{padding-left:20px;border-left:2px solid;font-style: italic;}
 .header-left .header-text {margin:12px 0 11px; line-height:22px; font-size:18px; font-weight:400; color:#f4eded;}
 .header-left .book-explains {margin:0px; font-size:18px; font-weight:700; color:#f8f0f0;}
 .header-left .book-explains b {color:#fac73c;}
-.learn-box { clear:both; margin:38px 0 0 0; padding:0px;}
+.learn-box { clear:both; margin:0 0 0 0; padding:0px;}
 .header-left h2 {margin:10px 0 14px 0; padding:0px; font-size:24px; font-weight:700; color:#faf5f5;}
 .header-left p{clear:both;}
 .header-left ul {margin:0 0 0 0; padding:0px; list-style:none;}
@@ -98,9 +98,9 @@ blockquote{padding-left:20px;border-left:2px solid;font-style: italic;}
 .header-left a {color:#f9f2f2;text-decoration: underline;}
 
 .header-right {display: inline-block;vertical-align: top; max-width:35%;margin:0;text-align: center;}
-.header-right .book { display: inline-block;vertical-align: top; }
+.header-right .book { display: inline-block;vertical-align: top;margin-top: 50px }
 .header-right .book img {width:100%;}
-.header-right .number { position:absolute; right: 21.2%; top: 128px; }
+.header-right .number { position:absolute; right: 21.2%; top: 178px; }
 .header-right .number img {width:100%;}
 .header-right .star {  min-width:135px; text-align:center;}
 .header-right .star img {margin-right:8px;}
