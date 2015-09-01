@@ -124,9 +124,7 @@ blockquote{padding-left:20px;border-left:2px solid;font-style: italic;}
 .content-text ul li .publish-report p.testimonial-text {margin:0px; padding:0px;}
 .content-text ul li .publish-report img {  padding:0 2px 0 0; float:left; margin:-9px 0 0 0;}
 .content-text ul li .publish-report p { padding-top:17px; font-size:16px; font-family: 'Open Sans';}
-.content-text ul li .img { width:100%; float:left; clear:both;margin: 0 0 20px; text-align:center; position:relative;}
-.content-text ul li .img:hover {cursor:pointer;}
-.content-text ul li .img:hover .video-thumb {display:block;}
+.content-text ul li .img { width:100%; float:left; clear:both;margin: 0 0 20px; text-align:center; position:relative;cursor:pointer;}
 .content-text ul li .img img { float: left; border:3px solid #d4d4d4; width:100%;}
 .content-text ul li.last { margin-right:0px; margin-bottom:30px;}
 .content-text ul li .title-bottom { font-weight:700; margin:0; padding:0; font-size:16px; display:inline-block; color:#207fc1;} 

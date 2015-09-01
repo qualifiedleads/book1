@@ -50,7 +50,7 @@
 	left: 0;
 	line-height: 100%;
 	text-align: center;
-	display: none;
+	display: block;
 }
 .video-thumb .background
 {
@@ -60,8 +60,7 @@
 	top: 0;
 	left: 0;
 	background-color: #000;
-	opacity: 0.5;
-	filter:alpha(opacity=70);
+	opacity: 0.2;
 }
 .video-thumb .foreground
 {
@@ -70,7 +69,16 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: url("../img/play.png");
+	background-image: url("../img/play-1.png");
 	background-position: center center;
 	background-repeat: no-repeat;
+	opacity: 0.5;
+}
+.video-thumb:hover .foreground
+{
+	opacity: 0.7;
+}
+.video-thumb:hover .background
+{
+	opacity: 0;
 }
