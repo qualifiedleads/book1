@@ -11,15 +11,6 @@ popup_video = {
 		var box = $("#popup_video_object_box");
 		var tm = box.height()+(box.outerHeight()-box.innerHeight());
 		var lm = box.width()+(box.outerWidth()-box.innerWidth());
-		/*
-		box.css({
-	        'position' : 'absolute',
-	        'left' : '50%',
-	        'top' : '50%',
-	        'margin-left' : -(lm/2),
-	        'margin-top' : -(tm/2)
-    	});
-		*/
 		$("#popup_video_object_box iframe").attr("src","http://www.youtube.com/v/YE7VzlLtp");
 		$("#popup_video_object").css("display","table");
 		var videoID = $(this).attr("rel");
