@@ -79,6 +79,15 @@ blockquote{padding-left:20px;border-left:2px solid;font-style: italic;}
    Author's custom styles
    ========================================================================== */
 
+.clearfix:after {
+	 visibility: hidden;
+	 display: block;
+	 font-size: 0;
+	 content: " ";
+	 clear: both;
+	 height: 0;
+ }
+
 .main-page {width:100%; word-wrap:break-word; }
 
 .header-bg {background-color:#1a7abc; width:100%; border-top:28px solid #363636; color:#faf9f9; padding-top:43px; display:inline-block; float:left; padding-bottom: 36px; min-height:500px}
@@ -130,7 +139,7 @@ blockquote{padding-left:20px;border-left:2px solid;font-style: italic;}
 .content-text ul li .title-bottom { font-weight:700; margin:0; padding:0; font-size:16px; display:inline-block; color:#207fc1;} 
 .content-text ul li div {color:#1d7dc0;}
 
-.authors { width:100%; background-color:#f1f1f1; clear:both; padding:63px 0 48px; display:inline-block; position: relative;text-align: center; overflow: auto}
+.authors { width:100%; background-color:#f1f1f1; clear:both; padding:63px 0 48px; display:inline-block; position: relative;text-align: center;}
 .authors .left-text {  display:inline-block; width: auto;vertical-align: top;margin-right:15px; float: left;}
 .authors .left-text .left-img {  border: 4px solid #fffeff;  height: auto; margin: 0 auto; width: 47%;}
 .authors .left-text .left-img img {width:100%;}
