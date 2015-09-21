@@ -310,11 +310,10 @@ blockquote{padding-left:20px;border-left:2px solid;font-style: italic;}
 }
 
 @media only screen and (max-width: 540px){
-	.header-right .star { top:260px;}
 	.header-left {width:98%; }
-	.header-right {clear:both;float:none; margin: 0 auto;position:relative; text-align:center; max-width:100%; }
+	.header-right {clear:both; float:none; margin: 0 auto; position:relative; text-align:center; max-width:100%; }
 	.header-right .book {display:inline-block; position:inherit;}
-	.header-right .number {position: absolute; right: 51.2%; top:100px;width:45%!important;}
+	.header-right .number {position: absolute; right: 51.2%; top:25%;width:45%!important;}
 	.header-right .star {top: 99%; text-align: center; width:100%; left:0; }
 	.header-right .star img { width:50%;}
 	.header-bg {padding-top:25px;}
@@ -335,6 +334,11 @@ blockquote{padding-left:20px;border-left:2px solid;font-style: italic;}
 	.content-text {padding-top:20px;}
 	
 
+}
+
+@media (max-width: 420px){
+	.book {margin: auto !important;}
+	.book img {width: 70% !important;}
 }
 
 @media only screen and (max-width: 440px){
@@ -375,17 +379,13 @@ blockquote{padding-left:20px;border-left:2px solid;font-style: italic;}
 	.authors .right-text .small-text ul { width:100%;}
 	.authors .left-text .left-img p {font-size:12px; padding:10px 0; }
 	.authors .left-text .right-img p {font-size:12px; padding:10px 0;}
-	.buy .box img {width:30%;}
 	.buy .box { margin:50px auto 20px;}
 	.buy .box img {width:34%;}
 	.buy .box a{font-size:14px; line-height:18px; }
 	.buy .box b {font-size:14px; line-height:18px; }
 	.header-left .header-title {font-size:23px; line-height:26px;}
-	.content-text ul li { min-height: 437px; }
-
-	
+	.content-text ul li { min-height: 437px; }	
 }
-
 
 @media only screen and (max-width: 300px){ 
     .header-left .header-title { font-size: 20px; line-height: 24px; } 
