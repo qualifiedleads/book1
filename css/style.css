@@ -218,7 +218,7 @@ blockquote{padding-left:20px;border-left:2px solid;font-style: italic;}
 	.header-left .header-title {font-size:40px; line-height:48px; margin-bottom:5px;}
 	.header-left .title-small {font-size:22px; line-height:26px;}
 	.header-left .book-explains {font-size:16px; line-height:18px;}
-	.header-right .number {width:19% !important; right:19.2%;}	
+	.header-right .number {width:19% !important;}	
 	.header-right .star { top:450px; right:6.2%;}
 	.orange-box .orange-box-center img { width:18.9%;}
 	.content-area { width:98%;}
@@ -292,7 +292,7 @@ blockquote{padding-left:20px;border-left:2px solid;font-style: italic;}
 }
 
 @media only screen and (max-width: 600px) {
-	.header-right .number {top:64px;}
+	.header-right .number {top:150px;}
 	.content-text ul li { min-height:473px;}
 	.header-left ul li {margin: 0 0 10px;}
 }
