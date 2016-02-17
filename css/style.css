@@ -220,7 +220,7 @@ blockquote{padding-left:20px;border-left:2px solid;font-style: italic;}
 	.header-left .book-explains {font-size:16px; line-height:18px;}
 	.header-right .number {width:19% !important;}	
 	.header-right .star { top:450px; right:6.2%;}
-	.orange-box .orange-box-center img { width:18.9%;}
+	.orange-box .orange-box-center img { /*width:18.9%;*/}
 	.content-area { width:98%;}
 	.header-left ul li {width:90%; margin-right:4%;}
 	.content-text ul li {margin:0 3.5% 63px 0}
@@ -235,7 +235,7 @@ blockquote{padding-left:20px;border-left:2px solid;font-style: italic;}
 }
 
 @media only screen and (max-width: 850px){
-	.orange-box .orange-box-center img { width: 18.5%; }
+	.orange-box .orange-box-center img { /*width: 18.5%;*/ }
 	
 }
 
