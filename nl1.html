@@ -7,12 +7,15 @@
 
 <!-- Styles -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/ani.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/popup-video.css">
 <!-- Styles End -->
 
 <!-- Javascript -->
-<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/html5shiv.js" type="text/javascript"></script>
 <script src="js/modernizer.js" type="text/javascript"></script>
 <script src="js/functions.js" type="text/javascript"></script>
@@ -29,6 +32,19 @@
     <!-- Header Center -->
     <div class="header-center"> 
       
+      <!-- Header Nav -->
+      <div class="header-nav" onclick="toggle_menu(this)">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+        <ul class="links animated rotateIn">
+          <li><a href="http://www.newerapub.com/anti-drug.html">Anti-drug</a></li>
+          <li><a href="http://www.newerapub.com/education.html">Education</a></li>
+          <li><a href="http://www.newerapub.com/self-respect.html">Self-respect</a></li>
+          <li><a href="http://www.newerapub.com/shop.php">Shop</a></li>
+          <li><a href="http://www.newerapub.com/contact.php">Contact</a></li>
+        </ul>
+      </div>
+      <script>function toggle_menu(e){$(e).hasClass("focused")?($(e).removeClass("focused"),$(e).children("span.glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-menu-hamburger")):($(e).addClass("focused"),$(e).children("span").removeClass("glyphicon-menu-hamburger").addClass("glyphicon-chevron-down"))}</script>
+
       <!-- Header Left -->
       <div class="header-left">
         <div class="header-title">Weet je waarom “positief denken” je nooit meer op kan leveren dan dat?</div>
@@ -223,6 +239,7 @@
 </div>
 <!-- Main Page End -->
 <!-- Custom Javascript -->
+<!-- Toggle Menu -->
 <!-- Popup Video for testimonials -->
 <script src="js/popup_video.js"></script>
 <script src="https://www.youtube.com/player_api"></script>
