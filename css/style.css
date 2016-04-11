@@ -335,7 +335,7 @@ p.clear {
 	.learn-box {margin-top:24px}
 	.buy .box {width:96%;}
 	img.related-image {display: block; width: 100%; float: none; margin: auto}
-	
+
 }
 
 @media only screen and (max-width: 480px){
@@ -471,7 +471,6 @@ p.clear {
 .header-nav ul.links li a:hover {
     color: #992200;
     background-color: white;
-    border-top-left-radius: 15px;
 }
 .header-nav.focused {
     background-color: #920;
@@ -481,4 +480,13 @@ p.clear {
 }
 .header-nav.focused > span {
     opacity: 1;
+}
+#legalModal .modal-body {
+    padding: 15px 30px;
+}
+#legalModal .modal-body p {
+    text-align: justify;
+}
+@media (max-width: 550px) {
+    .header-nav {top: -50px;}
 }
