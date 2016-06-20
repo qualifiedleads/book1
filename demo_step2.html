@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <style type="text/css">
+        a.cta-button {
+            padding: 15px;
+            color: white;
+            border-radius: 5px;
+            background-color:orange;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Step 2 - Landing Page.</h1>
+<hr />
+<p>
+Google has automatically added an additional query string parameter called<br />
+GCLID (Google Click Identifier) to the url of this landing page.<br />
+This landing page has a CTA button that will redirect to an affiliate link.<br />
+when clicked.
+</p>
+<p>
+Default Link: <i>'demo_step3.html?affliate=john&ref_id=657&subid=null'</i><br />
+</p>
+<p>
+We will programmatically pass the value of GCLID to our affiliate link parameter<br />
+named <i>'subid'</i>.
+</p>
+<br />
+<p>
+    <a class="cta-button" href="demo_step3.html?affliate=john&ref_id=657&subid=null">Click here to go to product</a>
+</p>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script>
+    $('a.cta-button').click(function(e){
+        e.preventDefault();
+
+        function updateParam(uri, key, value) {
+            var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+            var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+            if (uri.match(re)) {
+                return uri.replace(re, '$1' + key + "=" + value + '$2');
+            }
+            else {
+                return uri + separator + key + "=" + value;
+            }
+        }
+
+        function getParam(p) {
+            var match = RegExp('[?&]' + p + '=([^&]*)').exec(window.location.search);
+            return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+        }
+
+        var affiliate_link = $('a.cta-button').attr('href');
+        var gclid = getParam('gclid');
+        top.location = updateParam(affiliate_link, 'subid', gclid);
+    })
+</script>
+</body>
+</html>
