@@ -176,7 +176,6 @@
                 </p>
             </div>
         </div>
-        <!--
         <div class="container" style="height:30px"></div>
         <div class="container">
             <div class="col-50">
@@ -191,7 +190,6 @@
                 </div>
             </div>
         </div>
-        -->
         <div class="container" style="height:55px"></div>
     </section>
     <footer>

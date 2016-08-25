@@ -40,39 +40,39 @@
             <div style="height:60px"></div>
             <div class="col-50">
                 <div id="dvd_offer">
-                    <h3>UNE SOLUTION SIMPLE POUR ÊTRE BIEN AVEC SOI-MÊME ET LES AUTRES</h3>
+                    <h3>A SIMPLE SOLUTION TO BEING YOURSELF AND GETTING ALONG WITH OTHERS</h3>
                     <div rel="img_holder" title="DVD La Dianétique offert">
                         <div id="offer_shape" class="star-shape animated rotateIn">
                             <div class="shape"></div>
-                            <div class="text-holder">DVD Offert</div>
+                            <div class="text-holder">DVD Offer</div>
                         </div>
                         <img class="img-responsive" src="assets/images/dvd_offer.png" alt="DVD La Dianétique offert" />
                     </div>
                 </div>
             </div>
             <div class="col-50">
-                <div id="order_form">
-                    <h4>Merci d'indiquer votre adresse de livraison.</h4>
+                <div id="order_form" class="en">
+                    <h4>We appreciate if you include delivery details.</h4>
                     <form>
                         <input type="hidden" name="request" value="order" />
                         <div class="form-input">
                             <i class="fa fa-user"></i>
-                            <input type="text" name="name" placeholder="Votre nom *" data-required="true" />
+                            <input type="text" name="name" placeholder="Name *" data-required="true" />
                         </div>
                         <div class="form-input">
                             <i class="fa fa-home"></i>
-                            <input type="text" name="address" placeholder="Votre adresse *" data-required="true" />
+                            <input type="text" name="address" placeholder="Address *" data-required="true" />
                         </div class="form-input">
                         <div class="form-input">
                             <i class="fa fa-phone"></i>
-                            <input type="text" name="phone" placeholder="Votre numéro de téléphone" />
+                            <input type="text" name="phone" placeholder="Phone number" />
                         </div>
                         <div class="form-input">
                             <i class="fa fa-envelope"></i>
-                            <input type="text" name="email" placeholder="Votre adresse e-mail" />
+                            <input type="text" name="email" placeholder="Email address" />
                         </div>
                         <div>
-                            <input type="submit" class="cta-button" value="Envoyer" />
+                            <input type="submit" class="cta-button" value="Submit" />
                         </div>
                     </form>
                 </div>
@@ -102,7 +102,7 @@
         <div class="back-overlay"></div>
         <div id="purchase_pointer">
             <div class="container">
-                <h3>DÉCOUVREZ UNE SOLUTION SIMPLE POUR PARVENIR À LA CONFIANCE EN SOI.</h3>
+                <h3>DISCOVER A SIMPLE SOLUTION TO ACHIEVE SELF CONFIDENCE.</h3>
             </div>
         </div>
         <div id="purchase_item" class="container">
@@ -152,9 +152,9 @@
         <div style="height: 50px;clear:both"></div>
         <div class="container">
             <div class="col-50">
-                <h1>Un best-seller</h1>
+                <h1>A worldwide bestseller</h1>
                 <p>
-                    La Dianétique a été écrit en 1950 et vendu à plus de 22 millions d'exemplaires à travers le monde. Il est traduit en 53 langues et disponible à la fois en livre et en DVD. Cliquez ici pour en savoir plus sur le livre et le DVD.
+                    Dianetics was written in 1950 and sold over 22 million copies worldwide. It is translated into 53 languages and available in both book and DVD. Click here to learn more about the book and DVD.
                 </p>
             </div>
             <div class="col-50">
@@ -167,16 +167,15 @@
                 <img class="img-responsive" src="assets/images/dianetique-definition.png" alt="Dianétique : du grec Dia et Noûs">
             </div>
             <div class="col-50">
-                <h1>Une définition de la Dianétique</h1>
+                <h1>A definition of Dianetics</h1>
                 <p>
-                    La Dianétique traite également des émotions inexpliquées que nous ressentons et qui sapent notre confiance en nous : la peur, la crainte de tout et de rien, l’hypocrisie, les hésitations permanentes, etc. Une fois ces mécanismes compris, vous ne serez plus ignorant fasse à vos réactions indésirables. Vous pourrez y faire quelque chose par le seul pouvoir de votre compréhension. 
+                    Dianetics deals with the unexplained emotions we feel and which undermine our confidence. Things like fear, fear of everything and nothing, hypocrisy, feeling unsure of yourself etc. Once these mechanisms are dealt with, you will understand and be in control of your unwanted reactions. By understanding them, you can do something about them.
                 </p>
                 <p>
-                    La Dianétique explique en détail des découvertes jusqu’ici ignorées dans le domaine de la compréhension de l’homme. Elles permettent de découvrir la source des comportements irrationnels qui détruisent la confiance que nous pouvons avoir en nous.
+                    Dianetics explains in detail discoveries in the field of human understanding which have been ignored up to now. You can use them to find the source of irrational behavior which destroy the confidence we ought to have in ourselves.
                 </p>
             </div>
         </div>
-        <!--
         <div class="container" style="height:30px"></div>
         <div class="container">
             <div class="col-50">
@@ -191,7 +190,6 @@
                 </div>
             </div>
         </div>
-        -->
         <div class="container" style="height:55px"></div>
     </section>
     <footer>
@@ -237,6 +235,6 @@
         </div>
     </div>
     <script src="assets/js/jquery-2.2.3.min.js"></script>
-    <script src="assets/js/form.js"> </script>
+    <script src="assets/js/form.php?lang=en"> </script>
 </body>
 </html>
