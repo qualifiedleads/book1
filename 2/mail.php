@@ -1,36 +1,26 @@
 <?php
-if (isset($_POST['request'],$_POST['name'],$_POST['address']))
+if (isset($_POST['request']))
 {
     $to = "mike@rtb.cat";
-    $subject = "Demande du livre";
-    $name = $_POST['name'];
-    $address = $_POST['address'];
-    $phone = isset($_POST['phone'])? $_POST['phone'] : "Not set.";
-    $email = isset($_POST['email'])? $_POST['email'] : "no-reply@email.none";
+    $subject = "Dianetics Book Order";
 
     // Prepare values.
-    $headers = "From: {$name} <{$email}>\r\n";
-    $headers .= "Reply-To: {$name} <{$email}>\r\n";
+    $headers = "From: MQL Mail Service <noreply@morequalifiedleads.co.uk>\r\n";
+    //$headers .= "Reply-To: {$name} <{$email}>\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-    $message = <<<MSG
-        <table>
-            <tbody>
-                <tr>
-                    <td>Name</td><td>:</td><td>{$name}</td>
-                </tr>
-                <tr>
-                    <td>Address</td><td>:</td><td>{$address}</td>
-                </tr>
-                <tr>
-                    <td>Phone</td><td>:</td><td>{$$phone}</td>
-                </tr>
-                <tr>
-                    <td>Email</td><td>:</td><td>{$email}</td>
-                </tr>
-            </tbody>
-        </table>
-MSG;
+
+    // Build table values.
+    $table = "<table><tbody>";
+    foreach($_POST as $field=>$info)
+    {
+        if($field != "request")
+        {
+            $table .= "<tr><td>{$field}</td><td>:</td><td>{$info}</td></tr>";
+        }
+    }
+    $table .= "</tbody></table>";
+    $message = "<h4>Details</h4>{$table}";
     try
     {
         mail($to,$subject,$message,$headers);

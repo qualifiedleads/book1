@@ -1,9 +1,4 @@
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-header("Content-Type: application/javascript");
-?>var message_box = {
+var message_box = {
     open : function(message){
         $("#modal_message").css("display","block");
         $("#modal_message .text").text(message);
@@ -16,21 +11,6 @@ header("Content-Type: application/javascript");
     }
 }
 $("#order_form form").submit(function(e){
-    <?php if (isset($_GET['lang'])): ?>
-        <?php if ($_GET['lang'] == "fr"): ?>
-            var text_wait = 'Attendez...';
-            var text_submit = 'Envoyer';
-        <?php elseif ($_GET['lang'] == "nl"): ?>
-            var text_wait = 'Wacht...';
-            var text_submit = 'Voorleggen';
-        <?php else: ?>
-            var text_wait = 'Wait...';
-            var text_submit = 'Submit';
-        <?php endif;?>
-    <?php else: ?>
-            var text_wait = 'Wait...';
-            var text_submit = 'Submit';
-    <?php endif; ?>
     e.preventDefault();
     var error = 0;
     var form = this;
@@ -40,11 +20,11 @@ $("#order_form form").submit(function(e){
 
     function working(obj){
         $(obj).find('input').prop("disabled", true);
-        $(obj).find('input[type="submit"]').val(text_wait);
+        $(obj).find('input[type="submit"]').val("Attendez...");
     }
     function done(obj){
         $(obj).find('input').prop("disabled", false);
-        $(obj).find('input[type="submit"]').val(text_submit);
+        $(obj).find('input[type="submit"]').val("Envoyer");
     }
 
     if(error == 0){
