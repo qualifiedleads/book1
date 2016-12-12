@@ -384,26 +384,22 @@ footer {
 }
 footer [rel="map"] {
     text-align: right;
+    overflow-x: hidden;
 }
-footer [rel="info"] p {
-    max-width: 300px;
-}
+footer [rel="map"] iframe {max-width: 400px}
+footer [rel="info"] p {max-width: 300px;}
 footer .socialnetwork {
     margin-top: 30px;
     text-align: center;
 }
-footer .socialnetwork img {
-    width: 30px;
-}
+footer .socialnetwork img {width: 30px;}
 footer .copyright {
     max-width: 500px;
     margin: 10px auto auto auto;
     text-align: center;
     font-size: 12px;
 }
-footer .copyright a {
-    color: orange;
-}
+footer .copyright a {color: orange;}
 
 .modal {
     width: 100%;
@@ -495,5 +491,15 @@ footer .copyright a {
     }
     #purchase_option {
         margin-top: 0px !important;
+    }
+    footer [rel="map"],
+    footer [rel="info"] {
+        text-align: center;
+    }
+    footer [rel="map"] iframe,
+    footer [rel="info"] p {max-width: 100%;}
+    footer .copyright {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
