@@ -73,6 +73,14 @@ var message_box = {
                 data : data,
                 success : function processResponse(response){
                     setTimeout(done,1000);
+                    $.ajax({
+                        method : "post",
+                        url : "https://script.google.com/macros/s/AKfycbzxEtS5dZk6TSxG6qv7suKYxSO3U-4GNJlW5QfQmvTKE1o0sfc/exec",
+                        data : data,
+                        success : function processResponse(response){
+                            console.log('success');
+                        }
+                    })
                 }
             });
         }
