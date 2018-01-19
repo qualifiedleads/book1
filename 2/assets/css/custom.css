@@ -188,7 +188,7 @@ header {
     position: relative;
     background-color: rgba(0,0,0,0.6);
 }
-#order_form h4 {
+#order_form h4{
     font-size: 20px;
     color: rgba(255,255,255,0.8);
     text-align: center;
@@ -471,14 +471,42 @@ footer .copyright a {color: orange;}
     top:1px;
 }
 .cta-button:active {position:relative;top:1px;}
+.title{
+    font-size: 1.4em;
+    font-weight: 800;
+}
+strong{
+    font-weight: 800;
+}
+.skyblue h2, .skyblue p{
+    color: #fff;
+}
+.skyblue .container{
+    display: flex;
+    padding: 2em 1em;
+}
+.dvd-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#info_block .img-caption {
+    text-align: center;
+    font-size: .9em;
+    margin: .4em auto;
+}
 
 @media (max-width: 750px) {
     #purchase_option {
         margin-top: 5% !important;
     }
+    .skyblue .container{
+        display: block;
+    }
 }
 @media (max-width: 650px) {
-    .col-40,.col-50,.col-60 {
+    .col-30,.col-40,.col-50,.col-60 {
         width: 100%;
     }
     #order_form {
