@@ -491,10 +491,20 @@ strong{
     align-items: center;
     justify-content: center;
 }
-#info_block .img-caption {
+#top_block .img-caption {
     text-align: center;
     font-size: .9em;
     margin: .4em auto;
+
+}
+#top_block h1{
+    font-size: 2em;
+}
+#top_block h3{
+    font-size: 1.7em;
+}
+#top_block p{
+    font-size: 1.5em;
 }
 
 @media (max-width: 750px) {
