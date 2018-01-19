@@ -1,0 +1,697 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.top-logo {
+    font-family: roboto;
+    line-height: 82px;
+    font-size: 28px;
+}
+
+body {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 14px;
+}
+header {
+    background-color: #2a3c5b;
+    padding: 0.3%;
+    
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20%;
+}
+#container-livre {
+    background-color: #3778a5;
+}
+#livre {
+    width: 1024px;
+    margin: auto;
+}
+#livre img {
+    float: left;
+}
+#livre h1 {
+    font-weight: normal;
+}
+.size {
+    display: block;
+    clear: both;
+}
+.achat {
+    color: white;
+    text-align: center;
+    width: 250px;
+    margin-left: 590px;
+    display: block;
+    position: relative;
+    top: 20px;
+}
+.bloc-achat {
+    position: absolute;
+    top: 60px;
+    margin-left: 450px;
+    width: 370px;
+    color: white;
+    text-align: center;
+    display: block;
+}
+.paypal-form {
+    border: #FFF solid 2px;
+    padding: 3%;
+}
+.paypal-form label,
+.paypal-form span,
+.paypal-form select,
+.paypal-form input {
+    display: inline-block;
+    margin: 2px;
+    vertical-align: bottom;
+}
+#container-video {
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#container-gris {
+    background-color: #f4f4f4;
+}
+#container-gris section {
+    width: 1024px;
+    margin: auto;
+}
+#container-gris h2 {
+    padding-top: 2%;
+    margin-left: 20%;
+    font-size: 25px;
+    width: 300px;
+    margin-bottom: 5px;
+}
+#container-gris p {
+    width: 300px;
+    text-align: justify;
+    float: left;
+    margin-left: 20%;
+}
+section.bestseller {
+    height: 210px;
+}
+section.definition {
+    height: 360px;
+}
+section.definition img {
+    position: relative;
+    right: 20px;
+}
+section.bestseller img {
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
+section.scientologie iframe {
+    margin-left: 3%;
+    position: relative;
+    top: -90px;
+}
+footer {
+    background-color: #2a3c5b;
+}
+#container-footer {
+    width: 1024px;
+    margin: auto;
+    color: white;
+}
+.contact img {
+    float: left;
+    position: relative;
+    margin-right: 4%;
+    margin-top: 1%;
+    width: 300px;
+    margin-left: 20%;
+}
+.contact h4 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+.contact ul {
+    list-style-type: none;
+    margin-top: 5px;
+    height: 200px;
+}
+.contact ul li {
+    margin: 3px;
+}
+.contact ul li a {
+    text-decoration: none;
+    color: white;
+}
+.socialnetwork {
+    text-align: center;
+    margin-top: 2%;
+}
+.socialnetwork img {
+    width: 30px;
+}
+.copyright {
+    max-width: 600px;
+    padding: 20px 0;
+    margin: 0 auto;
+    color: #999;
+    font-size: .7em;
+    text-align: center;
+}
+.copyright a {
+    color: #999;
+}
+.copyright a:hover,
+.copyright a:focus {
+    color: #333;
+}
+/* MERCI */
+
+#container-merci {
+    margin: auto;
+    margin-bottom:100px;
+}
+#merci {
+    width: 1024px;
+    margin: auto;
+    padding-top: 10%;
+}
+#merci p {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#merci a {
+    color: #3778a5;
+    text-decoration: none;
+    border: 2px solid #3778a5;
+    padding: 1%;
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+/* CONTACT FORM DVD GRATUIT */
+
+#contact-form {
+    width: 210px;
+    font-size: .9em;
+    margin-left: 20%;
+    display: block;
+    margin-top: 5%;
+}
+#contact-form label {
+    display: block;
+    margin: 0 0 .5em;
+}
+#contact-form span {
+    display: block;
+    margin: 0 0 .2em;
+}
+#contact-form input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: .9em;
+    border: #bbb solid 1px;
+}
+#contact-form textarea {
+    display: block;
+    width: 100%;
+    min-height: 60px;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: .9em;
+    border: #bbb solid 1px;
+}
+#contact-form input[type="text"]:focus,
+#contact-form textarea:focus {
+    border: #333 solid 1px;
+}
+#contact-form input[type="submit"] {
+    cursor: pointer;
+    padding: 3px 15px;
+    color: #fff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: .9em;
+    text-transform: uppercase;
+    background: #4469fe;
+    border: #4469fe solid 2px;
+}
+#contact-form input[type="submit"]:hover,
+#contact-form input[type="submit"]:focus {
+    color: #4469fe;
+    background: #fff;
+}
+
+input[type="submit"] {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+
+@media (max-width: 768px) {
+    header a {
+        margin: 0;
+        padding: 2%;
+    }
+    #livre,
+    #container-gris section,
+    #container-footer {
+        max-width: 100%
+    }
+    #container-livre {
+        background-color: #3778a5;
+        padding-bottom: 7%
+    }
+    #livre img {
+        width: 100%;
+        margin-left: 2%;
+    }
+    .bloc-achat {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        font-size: 25px;
+    }
+    .paypal-form {
+        font-size: 25px;
+    }
+    #container-video {
+        background-color: #fff;
+        padding-top: 7%;
+    }
+    #container-video iframe {
+        width: 100%;
+        height: 240px;
+        margin: auto;
+    }
+    #container-gris h2 {
+        text-align: center;
+        margin: auto;
+        margin-top: 10%;
+        width: 90%
+    }
+    #container-gris p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: both;
+        display: block;
+        text-align: justify;
+    }
+    section.bestseller img {
+        position: static;
+        display: block;
+        margin: auto;
+    }
+    section.definition img {
+        margin: auto;
+        width: 95%;
+        margin-bottom: 5%;
+    }
+    section.scientologie iframe {
+        position: static;
+        width: 100%;
+        margin: 0;
+    }
+    section.bestseller {
+        height: 320px;
+    }
+    section.definition {
+        height: 540px;
+    }
+    section.scientologie {
+        padding-bottom: 15px;
+    }
+    #container-footer {
+        width: 1024px;
+        margin: auto;
+        color: white;
+    }
+    footer {
+        background-color: #2a3c5b;
+    }
+    .contact img {
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+    .contact h4 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .contact ul {
+        list-style-type: none;
+        margin-top: 5px;
+        height: 170px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 14px;
+}
+header {
+    background-color: #2a3c5b;
+    padding: 0.3%;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20%;
+}
+#container-livre {
+    background-color: #3778a5;
+    /* height:450px; */
+    
+    padding-bottom: 45px;
+}
+#livre {
+    width: 1024px;
+    margin: auto;
+}
+#livre img {
+    float: left;
+}
+#livre h1 {
+    font-weight: normal;
+}
+.size {
+    display: block;
+    clear: both;
+    height: 70px !important;
+}
+.bloc-achat {
+    color: white;
+    text-align: center;
+    width: 370px;
+    position: absolute;
+    top: 60px;
+    margin-left: 450px;
+    display: block;
+}
+.paypal-form {
+    border: #FFF solid 2px;
+    padding: 3%;
+}
+.paypal-form label,
+.paypal-form span,
+.paypal-form select,
+.paypal-form input {
+    display: inline-block;
+    margin: 2px;
+    vertical-align: bottom;
+}
+#container-video {
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#container-gris {
+    background-color: #f4f4f4;
+}
+#container-gris section {
+    width: 1024px;
+    margin: auto;
+}
+#container-gris h2 {
+    padding-top: 2%;
+    /* padding-bottom:2%; */
+    
+    margin-left: 20%;
+    font-size: 25px;
+    width: 300px;
+}
+#container-gris p {
+    width: 300px;
+    text-align: justify;
+    float: left;
+    margin-left: 20%;
+}
+section.bestseller {
+    height: 210px;
+}
+section.bestseller img {} section.definition {
+    height: 360px;
+}
+section.definition img {
+    margin-left: 6%;
+}
+section.scientologie iframe {
+    margin-left: 3%;
+    position: relative;
+    top: -90px;
+}
+footer {
+    background-color: #2a3c5b;
+}
+#container-footer {
+    width: 1024px;
+    margin: auto;
+    color: white;
+}
+.contact img {
+    float: left;
+    position: relative;
+    margin-right: 4%;
+    margin-top: 1%;
+    width: 300px;
+    margin-left: 20%;
+}
+.contact h4 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+.contact ul {
+    list-style-type: none;
+    margin-top: 5px;
+    height: 200px;
+}
+.contact ul li {
+    margin: 3px;
+}
+.contact ul li a {
+    text-decoration: none;
+    color: white;
+}
+.socialnetwork {
+    text-align: center;
+    margin-top: 2%;
+}
+.socialnetwork img {
+    width: 30px;
+}
+.copyright {
+    max-width: 600px;
+    padding: 20px 0;
+    margin: 0 auto;
+    color: #999;
+    font-size: .7em;
+    text-align: center;
+}
+.copyright a {
+    color: #999;
+}
+.copyright a:hover,
+.copyright a:focus {
+    color: #333;
+}
+/* CONTACT FORM DVD GRATUIT */
+
+#dvd-dia-offert {
+    margin-left: 15%;
+    margin-right: 5%;
+}
+#contact-form {
+    width: 210px;
+    font-size: .9em;
+    margin-left: 80px !important;
+    display: block;
+    margin-top: 5%;
+}
+#contact-form label {
+    display: block;
+    margin: 0 0 .5em;
+}
+#contact-form span {
+    display: block;
+    margin: 0 0 .2em;
+}
+#contact-form input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: .9em;
+    border: #bbb solid 1px;
+}
+#contact-form textarea {
+    display: block;
+    width: 100%;
+    min-height: 60px;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: .9em;
+    border: #bbb solid 1px;
+}
+#contact-form input[type="text"]:focus,
+#contact-form textarea:focus {
+    border: #333 solid 1px;
+}
+#contact-form input[type="submit"] {
+    cursor: pointer;
+    padding: 3px 15px;
+    color: #fff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: .9em;
+    text-transform: uppercase;
+    background: #4469fe;
+    border: #4469fe solid 2px;
+}
+#contact-form input[type="submit"]:hover,
+#contact-form input[type="submit"]:focus {
+    color: #4469fe;
+    background: #fff;
+}
+@media (max-width: 800px) {
+    header a {
+        margin: 0;
+        padding: 2%;
+    }
+    #livre,
+    #container-gris section,
+    #container-footer {
+        max-width: 100%
+    }
+    #container-livre {
+        background-color: #3778a5;
+        padding-bottom: 7%
+    }
+    #dvd-dia-offert {
+        margin: 0 !important;
+        padding: 0;
+        margin-left: 0px;
+    }
+    #livre img {
+        width: 100%;
+        margin-left: 2%;
+    }
+    .bloc-achat {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        font-size: 25px;
+    }
+    #container-video {
+        background-color: #fff;
+        padding-top: 7%;
+    }
+    #container-video iframe {
+        width: 100%;
+        height: 240px;
+        margin: auto;
+    }
+    #container-gris h2 {
+        text-align: center;
+        margin: auto;
+        margin-top: 10%;
+        width: 90%
+    }
+    #container-gris p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: both;
+        display: block;
+        text-align: justify;
+    }
+    section.bestseller img {
+        position: static;
+        display: block;
+        margin: auto;
+    }
+    section.definition img {
+		display: block;
+        margin: 0 auto 5%;
+        width: 90%;
+		height: auto;
+		right: 0;
+    }
+    section.scientologie iframe {
+        position: static;
+        max-width: 100%;
+        margin: 0;
+    }
+    section.bestseller {
+        height: 320px;
+    }
+    section.definition {
+        height: 540px;
+    }
+    section.scientologie {
+        padding-bottom: 15px;
+    }
+    #container-footer {
+        width: 1024px;
+        margin: auto;
+        color: white;
+    }
+    footer {
+        background-color: #2a3c5b;
+    }
+    .contact img {
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+    .contact h4 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .contact ul {
+        list-style-type: none;
+        margin-top: 5px;
+        height: 170px;
+    }
+	
+	.achat {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	#livre img {
+		margin-left: 0;
+	}
+	
+	section.bestseller img {
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+	}
+}
