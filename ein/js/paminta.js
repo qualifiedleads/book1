@@ -4,7 +4,7 @@ $.fn.paminta = function(callback){
   $(this).submit(function(){
       var pamintas = $(this).find('[data-paminta]');
       var errors = 0;
-      pamintas.removeClass("paminta-blow");
+      // pamintas.removeClass("paminta-blow");
       $(this).find('[data-paminta]').each(function(n){
           var field = $(this);
           /* Validate text */
