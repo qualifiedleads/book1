@@ -53,7 +53,7 @@ $(document).ready(function(){
    
                $.ajax({
                    method: 'GET',
-                   url: 'https://script.google.com/macros/s/AKfycbyIg57MoqgCvXOq4ZmoyKEb45rzs-JPPYjcvqKvH2GRWuANe71L/exec',
+                   url: 'https://script.google.com/macros/s/AKfycbxQGaO8WWO578Tr9nw6NrWWOQ6F3ZC8xRjmyVOwr3_TEZOEsAq9/exec',
                    data: values_raw+'&date='+getLocaleDateTime(),
                    error: function(jqXHR,textStatus,errorThrown){
                        //console.log("Failed to load content.", "Error "+jqXHR.status);
