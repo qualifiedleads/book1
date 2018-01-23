@@ -61,14 +61,18 @@ $(document).ready(function(){
                        $('#register_form input').prop("disabled",false);
                        $('#register_form select').prop("disabled",false);
                        $('#register_form button[type="submit"]').text("Wait...").prop("disabled",false);
-                     //   goog_report_conversion('https://www.oca.scientology.dk/questions.html');
+                       goog_report_conversion_1();
+                       goog_report_conversion_2();
+                       goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
                    },
                    success: function(response) {
                        console.log('OCA started, OCA Id: ' + data.result);
                        $('#register_form input').prop("disabled",false);
                        $('#register_form select').prop("disabled",false);
                        $('#register_form button[type="submit"]').text("Wait...").prop("disabled",false);
-                     //   goog_report_conversion('https://www.oca.scientology.dk/questions.html');
+                       goog_report_conversion_1();
+                       goog_report_conversion_2();
+                       goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
                    }
                });
    $('#register_form button[type="submit"]').text("Wait...").prop("disabled",true);
