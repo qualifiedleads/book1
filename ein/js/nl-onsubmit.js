@@ -50,25 +50,26 @@ $(document).ready(function(){
    }
 
  //   Ajax submit
-   
                $.ajax({
                    method: 'GET',
                    url: 'https://script.google.com/macros/s/AKfycbyIg57MoqgCvXOq4ZmoyKEb45rzs-JPPYjcvqKvH2GRWuANe71L/exec',
                    data: values_raw+'&date='+getLocaleDateTime(),
                    error: function(jqXHR,textStatus,errorThrown){
-                       //console.log("Failed to load content.", "Error "+jqXHR.status);
-                       console.log('OCA started, OCA Id: ' + data.result);
+
                        $('#register_form input').prop("disabled",false);
                        $('#register_form select').prop("disabled",false);
                        $('#register_form button[type="submit"]').text("Wait...").prop("disabled",false);
-                     //   goog_report_conversion('https://www.oca.scientology.dk/questions.html');
+                       goog_report_conversion_1();
+                       goog_report_conversion_2();
+                       goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
                    },
                    success: function(response) {
-                       console.log('OCA started, OCA Id: ' + data.result);
                        $('#register_form input').prop("disabled",false);
                        $('#register_form select').prop("disabled",false);
                        $('#register_form button[type="submit"]').text("Wait...").prop("disabled",false);
-                     //   goog_report_conversion('https://www.oca.scientology.dk/questions.html');
+                       goog_report_conversion_1();
+                       goog_report_conversion_2();
+                       goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
                    }
                });
    $('#register_form button[type="submit"]').text("Wait...").prop("disabled",true);
