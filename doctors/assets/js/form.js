@@ -84,9 +84,17 @@ var message_box = {
                         method : "post",
                         url : urls[$('input[name="lang"]').val()],
                         data : data,
+                        error: function(jqXHR,textStatus,errorThrown){
+                            goog_report_conversion_1();
+                            goog_report_conversion_2();
+                            goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
+                        },
                         success : function processResponse(response){
-                            console.log('success');
+                            goog_report_conversion_1();
+                            goog_report_conversion_2();
+                            goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
                         }
+                        
                     })
                     setTimeout(done,1000);
                 }
