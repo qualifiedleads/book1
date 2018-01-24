@@ -52,6 +52,8 @@
                             <i class="fa fa-phone"></i>
                             <input type="text" name="phone" placeholder="Telefon *" data-required="phone" data-error="error" />
                         </div>
+                        <input name="origin"  id="origin" type="hidden" value=""/>
+                        <input name="lang" type="hidden" value="cd"/>
                         <div>
                             <button type="submit" class="cta-button" data-value="Schicken Sie mir meine kostenfreie DVD" data-active="Einen Moment bitte...">Schicken Sie mir meine kostenfreie DVD</button>
                         </div>
@@ -211,5 +213,6 @@ Wir danken der LRH Library für die freundliche Genehmigung, Auszüge aus den ur
     </style>
     <script src="assets/libs/jquery/jquery-2.2.3.min.js"></script>
     <script src="assets/js/form.js"> </script>
+    <script> document.getElementById('origin').value = window.location; </script>
 </body>
 </html>

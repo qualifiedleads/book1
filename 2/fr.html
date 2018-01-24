@@ -71,6 +71,8 @@
                             <i class="fa fa-envelope"></i>
                             <input type="text" name="email" placeholder="Votre adresse e-mail" />
                         </div>
+                        <input id="origin" type="hidden" name="origin">
+                        <input name="lang" type="hidden" value="fr"/>
                         <div>
                             <input type="submit" class="cta-button" value="Envoyer" />
                         </div>
@@ -236,5 +238,6 @@
     </div>
     <script src="assets/js/jquery-2.2.3.min.js"></script>
     <script src="assets/js/form.js"> </script>
+    <script> document.getElementById('origin').value = window.location; </script>
 </body>
 </html>
