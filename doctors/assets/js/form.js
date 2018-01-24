@@ -16,6 +16,14 @@ var message_box = {
 
 ;(function($){
     var form = $("#order_form form");
+    var urls = {
+        "en": "https://script.google.com/macros/s/AKfycbyIg57MoqgCvXOq4ZmoyKEb45rzs-JPPYjcvqKvH2GRWuANe71L/exec",
+        "fr": "https://script.google.com/macros/s/AKfycbwzwatitW1Y-eI2ZPASUPj1x_6fKz3mAUq3KxRkKr8dDZCt1JI/exec",
+        "de": "https://script.google.com/macros/s/AKfycbzHJOamgdRJO752bFVoFAWr_LzEZ04xNt7nvaH_VM8c00Prpxk/exec",
+        "nl": "https://script.google.com/macros/s/AKfycby6-44SDZVUAC_dqkd-lZaB7lcKGK12QlRTYZGpGsmfbsqBw9M/exec",
+        "dk": "https://script.google.com/macros/s/AKfycbwQBvPbtdJ0Zyy2eiOws69i4ngpZa1bIyNF3x6iWybAczoV5wc/exec",
+    }
+
 
     // Init Error UIs.
     form.find(".form-input").each(function(){
@@ -72,15 +80,15 @@ var message_box = {
                 url : "http://lat.com.es/new_era/mail.php",
                 data : data,
                 success : function processResponse(response){
-                    setTimeout(done,1000);
                     $.ajax({
                         method : "post",
-                        url : "https://script.google.com/macros/s/AKfycbzxEtS5dZk6TSxG6qv7suKYxSO3U-4GNJlW5QfQmvTKE1o0sfc/exec",
+                        url : urls[$('input[name="lang"]').val()],
                         data : data,
                         success : function processResponse(response){
                             console.log('success');
                         }
                     })
+                    setTimeout(done,1000);
                 }
             });
         }

@@ -79,7 +79,6 @@ var message_box = {
                 url : "http://lat.com.es/new_era/mail.php",
                 data : data,
                 success : function processResponse(response){
-                    setTimeout(done,1000);
                     $.ajax({
                         method : "post",
                         url : urls[$('input[name="lang"]').val()],
@@ -88,6 +87,7 @@ var message_box = {
                             console.log('success');
                         }
                     })
+                    setTimeout(done,1000);
                 }
             });
         }
