@@ -22,6 +22,13 @@ $(document).ready(function(){
    var values = $('#register_form').serializeArray();
    var values_array = [];
    var values_final;
+   var urls = {
+    "en": "https://script.google.com/macros/s/AKfycbyIg57MoqgCvXOq4ZmoyKEb45rzs-JPPYjcvqKvH2GRWuANe71L/exec",
+    "fr": "https://script.google.com/macros/s/AKfycbwzwatitW1Y-eI2ZPASUPj1x_6fKz3mAUq3KxRkKr8dDZCt1JI/exec",
+    "de": "https://script.google.com/macros/s/AKfycbzHJOamgdRJO752bFVoFAWr_LzEZ04xNt7nvaH_VM8c00Prpxk/exec",
+    "nl": "https://script.google.com/macros/s/AKfycby6-44SDZVUAC_dqkd-lZaB7lcKGK12QlRTYZGpGsmfbsqBw9M/exec",
+    "dk": "https://script.google.com/macros/s/AKfycbwQBvPbtdJ0Zyy2eiOws69i4ngpZa1bIyNF3x6iWybAczoV5wc/exec",
+}
 
    for(var n in values){
        values_array.push('"'+values[n].name+'":"'+values[n].value+'"');
@@ -52,7 +59,7 @@ $(document).ready(function(){
  //   Ajax submit
                $.ajax({
                    method: 'GET',
-                   url: 'https://script.google.com/macros/s/AKfycby6-44SDZVUAC_dqkd-lZaB7lcKGK12QlRTYZGpGsmfbsqBw9M/exec',
+                   url: urls[$('input[name="lang"]').val()],
                    data: values_raw+'&date='+getLocaleDateTime(),
                    error: function(jqXHR,textStatus,errorThrown){
 
