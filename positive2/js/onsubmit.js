@@ -1,4 +1,10 @@
 $(document).ready(function(){
+
+    $(".et_pb_promo_button").click(function(e) {
+        e.preventDefault();
+        var aid = $(this).attr("href");
+        $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+    });
   var submit_fx = function(){
 
    // Process First name
