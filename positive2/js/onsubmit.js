@@ -71,7 +71,7 @@ $(document).ready(function(){
 
                        $('#register_form input').prop("disabled",false);
                        $('#register_form select').prop("disabled",false);
-                       $('#register_form button[type="submit"]').text("Wait...").prop("disabled",false);
+                       $('#register_form button[type="submit"]').text("Sent").prop("disabled",false);
                        goog_report_conversion_1();
                        goog_report_conversion_2();
                        goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
@@ -79,7 +79,7 @@ $(document).ready(function(){
                    success: function(response) {
                        $('#register_form input').prop("disabled",false);
                        $('#register_form select').prop("disabled",false);
-                       $('#register_form button[type="submit"]').text("Wait...").prop("disabled",false);
+                       $('#register_form button[type="submit"]').text("Sent").prop("disabled",false);
                        goog_report_conversion_1();
                        goog_report_conversion_2();
                        goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
