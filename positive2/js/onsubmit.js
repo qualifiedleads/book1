@@ -11,24 +11,14 @@ $(document).ready(function(){
    var full_name = $.trim($("#full_name").val());
    var name_parts = full_name.split(' ');
    var last_index = name_parts.length - 1;
-   var fname, lname;
-   fname = name_parts[0];
-   lname = name_parts[last_index];
-   if(name_parts.length > 2){
-       for(var i in name_parts){
-           if(i != 0 && i !=last_index){
-               fname += ' ' + name_parts[i];
-           }
-       }
-   }
-   $('#register_form input[name="fname"]').val(fname);
-   $('#register_form input[name="lname"]').val(lname);
-   
+   var fname = $.trim($("#et_pb_contact_voornaam_1").val());
+   var lname = $.trim($("#et_pb_contact_achternaam_1").val());
    var values_raw = $('#register_form').serialize();
-   var values = $('#register_form').serializeArray();
-   var values_array = [];
-   var values_final;
+   values_raw = values_raw + "&name=" + fname + "%20" +lname
+   
+   
    var urls = {
+    "be": "https://script.google.com/macros/s/AKfycbxQGaO8WWO578Tr9nw6NrWWOQ6F3ZC8xRjmyVOwr3_TEZOEsAq9/exec", 
     "en": "https://script.google.com/macros/s/AKfycbyIg57MoqgCvXOq4ZmoyKEb45rzs-JPPYjcvqKvH2GRWuANe71L/exec",
     "fr": "https://script.google.com/macros/s/AKfycbwzwatitW1Y-eI2ZPASUPj1x_6fKz3mAUq3KxRkKr8dDZCt1JI/exec",
     "de": "https://script.google.com/macros/s/AKfycbzHJOamgdRJO752bFVoFAWr_LzEZ04xNt7nvaH_VM8c00Prpxk/exec",
@@ -36,12 +26,7 @@ $(document).ready(function(){
     "dk": "https://script.google.com/macros/s/AKfycbwQBvPbtdJ0Zyy2eiOws69i4ngpZa1bIyNF3x6iWybAczoV5wc/exec",
 }
 
-   for(var n in values){
-       values_array.push('"'+values[n].name+'":"'+values[n].value+'"');
-   }
-
-   values_final = '{'+values_array.join(',')+'}';
-   values_final = JSON.stringify(JSON.parse(values_final));
+ 
    console.log(values_raw)
    function getLocaleDateTime(){
        var now  = new Date();
@@ -68,21 +53,22 @@ $(document).ready(function(){
                    url: urls[$('input[name="lang"]').val()],
                    data: values_raw+'&date='+getLocaleDateTime(),
                    error: function(jqXHR,textStatus,errorThrown){
-
+                        $('#register_form').find('input').val("");
                        $('#register_form input').prop("disabled",false);
                        $('#register_form select').prop("disabled",false);
                        $('#register_form button[type="submit"]').text("Sent").prop("disabled",false);
-                       goog_report_conversion_1();
-                       goog_report_conversion_2();
-                       goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
+                       gtag_report_conversion_1();
+                       gtag_report_conversion_2();
+                       gtag_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
                    },
                    success: function(response) {
+                        $('#register_form').find('input').val("");
                        $('#register_form input').prop("disabled",false);
                        $('#register_form select').prop("disabled",false);
                        $('#register_form button[type="submit"]').text("Sent").prop("disabled",false);
-                       goog_report_conversion_1();
-                       goog_report_conversion_2();
-                       goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
+                       gtag_report_conversion_1();
+                       gtag_report_conversion_2();
+                       gtag_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
                    }
                });
    $('#register_form button[type="submit"]').text("Wait...").prop("disabled",true);
