@@ -22,7 +22,14 @@ $(document).ready(function(){
    var values = $('#register_form').serializeArray();
    var values_array = [];
    var values_final;
-
+   var urls = {
+    "be": "https://script.google.com/macros/s/AKfycbxQGaO8WWO578Tr9nw6NrWWOQ6F3ZC8xRjmyVOwr3_TEZOEsAq9/exec", 
+    "en": "https://script.google.com/macros/s/AKfycbyIg57MoqgCvXOq4ZmoyKEb45rzs-JPPYjcvqKvH2GRWuANe71L/exec",
+    "fr": "https://script.google.com/macros/s/AKfycbwzwatitW1Y-eI2ZPASUPj1x_6fKz3mAUq3KxRkKr8dDZCt1JI/exec",
+    "de": "https://script.google.com/macros/s/AKfycbzHJOamgdRJO752bFVoFAWr_LzEZ04xNt7nvaH_VM8c00Prpxk/exec",
+    "nl": "https://script.google.com/macros/s/AKfycby6-44SDZVUAC_dqkd-lZaB7lcKGK12QlRTYZGpGsmfbsqBw9M/exec",
+    "dk": "https://script.google.com/macros/s/AKfycbwQBvPbtdJ0Zyy2eiOws69i4ngpZa1bIyNF3x6iWybAczoV5wc/exec",
+    }
    for(var n in values){
        values_array.push('"'+values[n].name+'":"'+values[n].value+'"');
    }
@@ -52,13 +59,13 @@ $(document).ready(function(){
  //   Ajax submit
                $.ajax({
                    method: 'GET',
-                   url: 'https://script.google.com/macros/s/AKfycby6-44SDZVUAC_dqkd-lZaB7lcKGK12QlRTYZGpGsmfbsqBw9M/exec',
+                   url: urls[$('input[name="lang"]').val()],
                    data: values_raw+'&date='+getLocaleDateTime(),
                    error: function(jqXHR,textStatus,errorThrown){
 
                        $('#register_form input').prop("disabled",false);
                        $('#register_form select').prop("disabled",false);
-                       $('#register_form button[type="submit"]').text("Wait...").prop("disabled",false);
+                       $('#register_form button[type="submit"]').text("Try Again").prop("disabled",false);
                        goog_report_conversion_1();
                        goog_report_conversion_2();
                        goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
@@ -66,7 +73,7 @@ $(document).ready(function(){
                    success: function(response) {
                        $('#register_form input').prop("disabled",false);
                        $('#register_form select').prop("disabled",false);
-                       $('#register_form button[type="submit"]').text("Wait...").prop("disabled",false);
+                       $('#register_form button[type="submit"]').text("Sent").prop("disabled",true);
                        goog_report_conversion_1();
                        goog_report_conversion_2();
                        goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
