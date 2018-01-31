@@ -81,11 +81,13 @@ var message_box = {
                 url : urls[$('input[name="lang"]').val()],
                 data : data,
                 error: function(jqXHR,textStatus,errorThrown){
+                    form.find('button[type="submit"]').text("Sent").prop("disabled", true);
                     gtag_report_conversion_1();
                     gtag_report_conversion_2();
                     gtag_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
                 },
                 success : function processResponse(response){
+                    form.find('button[type="submit"]').text("Sent").prop("disabled", true);
                     gtag_report_conversion_1();
                     gtag_report_conversion_2();
                     gtag_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
