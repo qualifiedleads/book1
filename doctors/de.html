@@ -88,10 +88,16 @@
                     <h4>Jouw leverings address:</h4>
                     <form data-success="Bericht verzonden">
                         <input type="hidden" name="request" value="order" />
+                        <input type="hidden" name="lang" value="de" />
+                        <input type="hidden" id="origin" name="origin" value="" />
                         <div class="form-input">
                             <i class="fa fa-user"></i>
                             <input type="text" name="name" placeholder="Naam *" data-required="name" data-error="verkeerd" />
                         </div>
+                        <div class="form-input">
+                            <i class="fa fa-envelope"></i>
+                            <input type="text" name="email" placeholder="Din email *" data-required="text" data-error="verkeerd" />
+                        </div class="form-input">
                         <div class="form-input">
                             <i class="fa fa-home"></i>
                             <input type="text" name="street" placeholder="Straat en huisnummer *" data-required="text" data-error="verkeerd" />
@@ -252,5 +258,6 @@
     </style>
     <script src="assets/libs/jquery/jquery-2.2.3.min.js"></script>
     <script src="assets/js/form.js"> </script>
+    <script> document.getElementById('origin').value = window.location; </script>
 </body>
 </html>
