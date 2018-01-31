@@ -75,28 +75,20 @@ var message_box = {
 
         if(error == 0){
             working();
+
             $.ajax({
-                method : "post",
-                url : "http://lat.com.es/new_era/mail.php",
+                method : "GET",
+                url : urls[$('input[name="lang"]').val()],
                 data : data,
+                error: function(jqXHR,textStatus,errorThrown){
+                    gtag_report_conversion_1();
+                    gtag_report_conversion_2();
+                    gtag_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
+                },
                 success : function processResponse(response){
-                    $.ajax({
-                        method : "post",
-                        url : urls[$('input[name="lang"]').val()],
-                        data : data,
-                        error: function(jqXHR,textStatus,errorThrown){
-                            goog_report_conversion_1();
-                            goog_report_conversion_2();
-                            goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
-                        },
-                        success : function processResponse(response){
-                            goog_report_conversion_1();
-                            goog_report_conversion_2();
-                            goog_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
-                        }
-                        
-                    })
-                    setTimeout(done,1000);
+                    gtag_report_conversion_1();
+                    gtag_report_conversion_2();
+                    gtag_report_conversion_3('https://dianeticsboek.nl/thank-you-extract/');
                 }
             });
         }
