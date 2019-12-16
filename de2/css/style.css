@@ -66,15 +66,19 @@ textarea {
 	padding-bottom:20px
 }
 
-
+font-face {
+    font-family: Roboto-Light;
+    src: url('../fonts/Roboto-Light.ttf');
+}
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 	font-size:16px;
-	background-color:#ffffff;
+	background-color:#f7f7f7;
 	color:#1a7abc;
 	
 }
@@ -96,7 +100,7 @@ blockquote{padding-left:20px;font-style: italic;}
 
 .main-page {width:100%; word-wrap:break-word; }
 
-.header-bg {background-color:#1a7abc; width:100%; border-top:28px solid #363636; color:#faf9f9; padding-top:43px; display:inline-block; float:left; padding-bottom: 36px; min-height:500px}
+.header-bg {background-color:#f7f7f7; width:100%; border-top:28px solid #363636; color:#faf9f9; padding-top:43px; display:inline-block; float:left; padding-bottom: 36px; min-height:500px}
 .header-center {margin:0 auto; width:974px; padding:0 15px; position:relative;}
 .header-left {display: inline-block;vertical-align: top;width:62%; font-family: 'Open Sans', sans-serif;}
 .header-left .header-title {margin:0 0 2px 0; font-size:48px; font-weight:700; color:#faf9f9; }
@@ -145,7 +149,7 @@ blockquote{padding-left:20px;font-style: italic;}
 .content-text ul li .title-bottom { font-weight:700; margin:0; padding:0; font-size:16px; display:inline-block; color:#207fc1;} 
 .content-text ul li div {color:#1d7dc0;}
 
-.authors { width:100%; background-color:#f1f1f1; clear:both; padding:63px 0 48px; display:inline-block; position: relative;text-align: center;}
+.authors { width:100%; background-color:#f7f7f7; clear:both; padding:63px 0 48px; display:inline-block; position: relative;text-align: center;}
 .authors .left-text {  display:inline-block; width: auto;vertical-align: top;margin-right:15px; float: left;}
 .authors .left-text .left-img {  border: 4px solid #fffeff;  height: auto; margin: 0 auto; width: 47%;}
 .authors .left-text .left-img img {width:100%;}
@@ -528,6 +532,7 @@ p.clear {
 	text-align: left;
 	margin-left: 26px;
     font-size: 20px;
+    color: #1d1d1f;
 }
 .book_content_area {
 	margin-bottom: 36px;
@@ -535,10 +540,11 @@ p.clear {
 .book_content_right {
 	text-align: left;
 	font-size: 20px;
+	color: #1d1d1f;
 }
 .book_content_right p.name_heading {
 	font-size: 23px;
-    color: #000;
+    color: #1d1d1f;
     font-weight: bold;
     margin-top: 6px;
 }
@@ -550,14 +556,14 @@ p.clear {
 }
 .journey_text p {
 	font-size: 20px;
-    /*color: #4e4e4e;*/
+    color: #1d1d1f;
     padding: 5px 0;
 }
 .testinomial_section {
 	text-align: left;
 }
 .testi_heading {
-	color: #000;
+	color: #1d1d1f;
 	font-size: 23px;
     font-weight: 700;
     margin-left: 14px;
@@ -567,21 +573,26 @@ p.clear {
 	width: 100%;
 }
 .testinomial_section .profile_content h3 {
-	color: #000;
+	color: #1d1d1f;
     font-weight: 600;
     margin-bottom: 0;
+}
+.profile_content p {
+	color: #1d1d1f;
 }
 .bookes_name p {
 	font-size: 20px;
 }
 .buy_now a {
 	background-color: #eaaa08;
-    color: #000;
+    color: #1d1d1f;
     border-radius: 50px;
     padding: 12px 44px;
     font-size: 20px;
     font-weight: 600;
     box-shadow: 0px 2px 3px rgb(144, 144, 144);
+        margin-top: 12px;
+    display: inline-flex;
 }
 .buy_now a:hover {
 	text-decoration: none;
@@ -589,6 +600,10 @@ p.clear {
 /*.testinomial_section .profile_content p {
 	color: #4e4e4e;
 }*/
+.bookes_name p {
+	color: #1d1d1f;
+}
+
 @media (min-width: 1200px) {
 	.container {
 	     width: 976px; 
@@ -606,6 +621,15 @@ p.clear {
 	}
 	.header_area .header-right p {
 		margin-left: 0;
+	}
+	.footer {
+		padding-top: 50px;
+	}
+}
+@media (max-width: 630px) {
+	.jour_life iframe {
+		width: 300px !important;
+		height: 300px !important;
 	}
 }
 @media (max-width: 480px) {
